@@ -1,7 +1,7 @@
 {
     "name": "Server Panic",
     "short_name": "Server Panic",
-    "start_url": "http://localhost:1313/",
+    "start_url": "https://serverpanic.org/",
     "theme_color": "#434648",
     "background_color": "#131418",
     "display": "standalone",
