@@ -2,19 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Server Panic</title>
-    <link>https://serverpanic.org/</link>
+    <link>http://localhost:1313/</link>
     <description>Recent content on Server Panic</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-mx</language>
-    <lastBuildDate>Tue, 02 May 2023 04:49:05 -0600</lastBuildDate><atom:link href="https://serverpanic.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Mar 2024 03:12:49 -0600</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My First Post</title>
-      <link>https://serverpanic.org/posts/my-first-post/</link>
-      <pubDate>Tue, 02 May 2023 04:49:05 -0600</pubDate>
+      <link>http://localhost:1313/posts/my-first-post/</link>
+      <pubDate>Thu, 07 Mar 2024 03:12:49 -0600</pubDate>
       
-      <guid>https://serverpanic.org/posts/my-first-post/</guid>
+      <guid>http://localhost:1313/posts/my-first-post/</guid>
+      
       <description>Introduction This is bold text, and this is emphasized text.
-Visit the Hugo website!</description>
+Visit the Hugo website!
+#!/bin/bash echo &amp;#34;hello world ..&amp;#34; </description>
+      
     </item>
     
   </channel>

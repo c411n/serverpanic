@@ -1,4 +1,12 @@
-<h1 align=center> Awesome hugo blog | <a href="https://hba.sid.one" target="_blank" rel="nofollow">Demo</a></h1>
+<div align=center> 
+ <picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/assets/icons/book-icon-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/main/assets/icons/book-icon-light.svg">
+  <img alt="Hugo blog awesome logo" src="https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/feat/logo-change/assets/icons/book-icon-light.svg" />
+</picture>
+ 
+</div>
+<h1 align=center> Hugo Blog Awesome | <a href="https://hba.sid.one" target="_blank" rel="nofollow">Demo link</a></h1>
 
 <h4 align=center>⚡ Fast | 📰 Clean UI | 🌙 Dark mode support | 📱 Responsive design </h4>
 
@@ -13,13 +21,22 @@
 
 ![Page speed score](https://raw.githubusercontent.com/hugo-sid/hugo-blog-awesome/master/images/pagespeed.png)
 
-Google PageSpeed Insights [test link](https://pagespeed.web.dev/report?url=https%3A%2F%2Fhugo-blog-awesome.netlify.app%2F).
+The result shown above was last confirmed on September 23, 2023. You can check the details of the PageSpeed test at this link: [Link to the analysis](https://pagespeed.web.dev/analysis/https-hba-sid-one/uh4rm91hnj?form_factor=mobile). You can also do a live [PageSpeed test](https://pagespeed.web.dev/analysis?url=https://hba.sid.one/) of the [demo website](https://hba.sid.one) now.
 
 </details>
 
+## Features
+
+- Minimal design
+- Light and dark mode
+- Syntax highlighting
+- RSS feed
+- No jQuery, no Bootstrap
+- 100/100 Google PageSpeed Insights [score](https://pagespeed.web.dev/analysis/https-hba-sid-one/uh4rm91hnj?form_factor=mobile) on all 4 metrics
+
 ## Why this theme?
 
-Hugo Blog Awesome is a theme crafted to capture your readers' attention.
+Hugo Blog Awesome (HBA) is a theme crafted to capture your readers' attention.
 
 Additionally, it's fast, [privacy-conscious](https://themarkup.org/blacklight?url=hba.sid.one), and comes with no external dependencies. That's right. There are no Google fonts, icon packs, or JavaScript frameworks. No trackers or ads to bloat your website.
 
@@ -27,19 +44,10 @@ Its focus on minimalism and clean UI ensures that your content takes the spotlig
 
 Built with Hugo, SCSS, and vanilla JavaScript.
 
-## Features
-
-- Minimal design
-- Responsive design
-- Light and dark modes
-- Syntax highlighting
-- RSS feed
-- No jQuery, Bootstrap
-- 100/100 Google PageSpeed Insights [score](https://pagespeed.web.dev/report?url=https%3A%2F%2Fhugo-blog-awesome.netlify.app%2F) on all 4 metrics
-
 ## Setup
 
-> **Note**: You need to have the Hugo extended version installed in order to use this theme. This theme uses SCSS for styling. With the Hugo extended version, SCSS can be compiled to CSS without any additional tools.
+> **Note**
+> You must have the [Hugo extended version](https://gohugo.io/installation/linux/#editions) installed in order to use this theme. This theme uses SCSS for styling. With the Hugo extended version, SCSS can be compiled to CSS without any additional tools.
 
 To create a new Hugo site with this theme, run the following command:
 
@@ -67,7 +75,7 @@ It is recommended that you copy the `config.toml` file from the `exampleSite` di
 
 ### Adding favicon
 
-I used [realfavicongenerator.net](https://realfavicongenerator.net/) to generate the favicons. You can place the resulting files in the `static\images\favicon` folder. That should get your favicon working.
+I used [realfavicongenerator.net](https://realfavicongenerator.net/) to generate the favicons. You can place the resulting files in the `assets\icons` folder. That should get your favicon working.
 
 If you want to customize anything further, you can modify `layouts\partials\head.html`.
 
@@ -91,7 +99,7 @@ url = "index.xml"
 
 <details>
   <summary>List of available icons (click to expand)</summary>
-  
+
 | Name            | Platform                        |
 | --------------- | ------------------------------- |
 | `123rf`         | 123rf.com                       |
@@ -163,8 +171,9 @@ url = "index.xml"
 | `telegram`      | telegram.org                    |
 | `tiktok`        | tiktok.com                      |
 | `twitch`        | twitch.tv                       |
-| `twitter`       | twitter.com                     |
+| `twitter` (the blue bird logo)       | twitter.com                     |
 | `unsplash`      | unsplash.com                    |
+| `x` (formerly Twitter)             | x.com                           |
 | `xda`           | xda-developers.com              |
 | `xing`          | xing.com                        |
 | `ycombinator`   | ycombinator.com                 |
@@ -174,6 +183,15 @@ url = "index.xml"
 </details>
 
 If you are trying to add an icon that is not listed above, you can modify `layouts\partials\svgs\svgs.html` to include your icon (SVG). You are encouraged to submit your icon by creating a pull request, so that others can benefit.
+
+### Enable go to top button
+
+To enable go to top button on blog posts, set `goToTop` to `true` in `config.toml` file.
+
+```toml
+[params]
+  goToTop = true
+```
 
 ## Content
 
@@ -185,20 +203,43 @@ To create a new post, run the following command:
 
 Then, edit the `my-first-post.md` file to suit your needs.
 
+### Comments
+
+To enable Disqus comments, set `services.disqus.shortname` in your site's `hugo.toml`.
+
+To use another comments system, provide your own `comments.html` partial in `layouts\partials\comments.html`.
+
 ## Contributing
 
 Please read [CONTRIBUTING.md](https://github.com/hugo-sid/hugo-blog-awesome/blob/main/CONTRIBUTING.md).
+
+## Contributors
+
+Thanks to these wonderful people for contributing to Hugo blog awesome:
+
+<a href="https://github.com/hugo-sid/hugo-blog-awesome/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=hugo-sid/hugo-blog-awesome" />
+</a>
 
 ## Websites using this theme
 
 If you are using this theme for any website, feel free to list the website here. You can submit a pull request (PR) to include your website.
 
-- https://krisnova.net/
-- https://paddy-exe.github.io/
-- https://www.siggijons.net/
-- https://debanwita27.github.io/
-- https://mrizkimaulidan.vercel.app/
-- https://www.ariesnine.cn/
+- <https://krisnova.net/>
+- <https://paddy-exe.github.io/>
+- <https://www.siggijons.net/>
+- <https://debanwita27.github.io/>
+- <https://mrizkimaulidan.vercel.app/>
+- <https://www.yukizr.com/>
+- <http://liamdalg.co.uk/>
+- <http://pratham-mishra.in/>
+- <https://chriscodes.net/>
+- <https://ruiper.es/>
+- <https://www.magicplace.de/>
+- <https://bskdany.com/>
+- <https://josephscottcampbell.com/>
+- <https://heckintosh.github.io/>
+- <https://dieter.plaetinck.be/>
 
 ## Support
 
